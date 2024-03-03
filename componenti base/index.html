@@ -1,0 +1,65 @@
+<html>
+  <head>
+	  <title>I Form</title>
+  </head>
+
+  <body>
+    <h1>I form</h1>
+
+    Per inserire un form si usa il tag form:<br/>
+    <form>
+      Dati anagrafici:<br/>
+      <fieldset>
+        Nome<input type="text" size="30" name="" id="" value=""/><br/>
+        Cognome<input type="text" name="" id="" value=""/><br/>
+        Inserisci la password<input type="password"/><br/>
+        Inserisci la tua mail:<input type="mail"><br/>
+        Inserisci la data:<input type="date" />
+        Commenti:<br/>
+        <textarea id="" name=""  rows="10" cols="10">Scrivi qui</textarea><br/>
+        <input type="submit" id="" name="" value="INVIA"/>
+        <input type="reset" id="" name="" value="AZZERA"/><br/>
+      </fieldset>
+
+      <hr color="red" size="3" />
+      Inserire menù a discesa:<br/>
+      Auto<select name="" id="">
+          <option value="">Audi</option>	
+          <option value="">Mercedes</option>
+          <option value="">Fiat</option>
+        </select><br/>
+      Scegli il linguaggio:<br/>	
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br />
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br />
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br />
+        <input type="radio" id="PhP" name="fav_language" value="PhP"/>
+        <label for="php">Php</label><br />
+        <br/><br/>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <!--<label for="vehicle1">-->I have a bike<!--</label>--><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+
+
+
+      <fieldset>
+        <legend>Dati anagrafici</legend>
+        Inserisci qui il tuo nome: <input type="text" name="nome" /><br />
+        Inserisci qui il tuo cognome: <input type="text" name="cognome" /><br />
+
+        Sesso: <input type="radio" name="sesso" value="maschio" />maschio
+        <input type="radio" name="sesso" value="femmina" />femmina<br />
+
+        Luogo di nascita: <input type="text" name="luogo" /><br/>
+        Data di nascita: <input type="date" name="data" /><br/>
+      </fieldset> 
+    </form>
+
+  </body>
+
+</html>

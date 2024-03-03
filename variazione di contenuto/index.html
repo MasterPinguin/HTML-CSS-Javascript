@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Accedi alla 4Ci</title>
+  </head>
+  <body>
+    <div id="myDiv">Contenuto iniziale</div>
+    <button id="myButton">Cambia contenuto</button>
+    <script> 
+        var myButton = document.getElementById("myButton");
+        var myDiv = document.getElementById("myDiv");
+        var initialContent = "Contenuto iniziale";
+        var intermediateContent = "Contenuto intermedio";
+        var finalContent = "Contenuto finale";
+        var timeoutDuration = 2000; // Durata in millisecondi (3 secondi)
+
+        var currentContent = initialContent;
+        var timer;
+
+        function changeContent() {
+        if (currentContent === initialContent) {
+            currentContent = intermediateContent;
+            myDiv.innerHTML = currentContent;
+            timer = setTimeout(changeContent, timeoutDuration);
+        } else if (currentContent === intermediateContent) {
+            currentContent = finalContent;
+            myDiv.innerHTML = currentContent;
+            timer = setTimeout(changeContent, timeoutDuration);
+        } else {
+            currentContent = initialContent;
+            myDiv.innerHTML = currentContent;
+        }
+        }
+
+        myButton.addEventListener("click", function() {
+        clearTimeout(timer); // Interrompe il timeout corrente, se presente
+        changeContent();
+        });
+    </script>
+</body>

@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.div {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.721);
+    padding: 35px 62px 150px;
+}
+
+h1 {
+    padding: 0px 35px 10px;
+    text-align: center;
+    font-family: Verdana, sans-serif
+}
+
+pre  {
+    padding: 35px 0px 0;
+    text-align: left;
+    font-size: 16px;
+    font-family: Verdana, sans-serif
+}
+
+label  {
+    padding: 35px 0px 0;
+    text-align: left;
+    font-size: 16px;
+    font-family: Verdana, sans-serif
+}
+
+.div .input {
+    padding: 12px 2px
+}
+
+.div .input input {
+    font-size: 16px;
+    width: 75%;
+    padding: 10px 5px;
+    border: 2px solid #196253;
+    border-radius: 10px;
+    outline: none
+}
+
+.div .input input:focus {
+    border-color: #23b999
+}
+
+select {
+    border: 2px solid #196253;
+    background-color: #23b999;
+    color: #effffb;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none
+}
+
+hr {
+    border: 1px solid #196253;
+}
+
+option{
+    border: 2px solid #23b999;
+    color: #effffb;
+    font-size: 16px;
+    background-color: #1962535b;
+    padding: 10px
+}
+
+option:checked{
+    border: 2px solid #23b999
+}
+
+option:not(:checked){
+    border: 2px solid #196253
+}
+
+input[type="checkbox"] {
+    border: 2px solid #196253;
+    background-color: #f0f0f0; 
+    width: 17px;
+    height: 17px
+}
+
+input[type="radio"] {
+    border: 2px solid #196253;
+    background-color: #f0f0f0;
+    width: 17px;
+    height: 17px
+}
+
+input[type="checkbox"]:checked {
+    background-color: #23b999;
+}
+
+input[type="radio"]:checked {
+    background-color: #23b999
+}
+
+
+.div .action button {
+    width: 50%;
+    border: 2px solid #196253;
+    padding: 10px;
+    color: #effffb;
+    background: #23b999;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.div .action button:hover {
+    background: #196253
+}

@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #94acd7;
+}
+
+.login-form {
+    background: #fff;
+    width: 500px;
+    margin: 65px auto;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, .2);
+}
+
+.login-form h1 {
+    padding: 35px 35px 0;
+    font-weight: 300
+}
+
+.login-form .content {
+    padding: 35px;
+    text-align: center
+}
+
+.login-form .input-field {
+    padding: 12px 5px
+}
+
+.login-form .input-field input {
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    padding: 10px 1px;
+    border: 0;
+    border-bottom: 1px solid #747474;
+    outline: none;
+}
+
+.login-form .input-field input:focus {
+    border-color: #222
+}
+
+.login-form a.link {
+    text-decoration: none;
+    color: #747474;
+    letter-spacing: .2px;
+    display: inline-block;
+    margin-top: 20px
+}
+
+.login-form .action button {
+    width: 100%;
+    border: 0;
+    padding: 18px;
+    color: #777;
+    border-radius: 10px;
+}
+
+.login-form .action button:hover {
+    background: #d8d8d8
+}

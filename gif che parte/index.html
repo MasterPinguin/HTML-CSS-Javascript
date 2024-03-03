@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Esempio GIF animata con JavaScript</title>
+  <style>
+    .my-image {
+      width: 200px;
+      height: 200px;
+    }
+    .si {
+        background-color: black;
+    }
+    .test {
+        color: rgb(255, 255, 255);
+    }
+  </style>
+  <script>
+    function replaceWithGif(element) {
+      var gifUrl = "imgg.gif";
+      var maxLoops = 1000;
+      
+      var img = new Image();
+      img.src = gifUrl;
+      
+      img.onload = function() {
+        element.src = gifUrl;
+        var loopCount = 0;
+        
+        var animationInterval = setInterval(function() {
+          loopCount++;
+          if (loopCount >= maxLoops) {
+            clearInterval(animationInterval);
+            element.src = "img.png";
+          }
+        }, img.duration * 1000);
+      };
+    }
+  </script>
+</head>
+<body class="si">
+  <h1 class="test">Passa il mouse sull'immagine</h1>
+  <img src="img.png" alt="Descrizione dell'immagine" class="my-image" onmouseover="replaceWithGif(this)">
+</body>
+</html>
